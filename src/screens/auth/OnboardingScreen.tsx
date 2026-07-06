@@ -35,7 +35,6 @@ const OnboardingScreen: React.FC<Props> = ({ navigation }) => {
 
     setLoading(true);
     try {
-      // Create user profile
       navigation.navigate('Home');
     } catch (error) {
       console.error(error);
@@ -60,7 +59,7 @@ const OnboardingScreen: React.FC<Props> = ({ navigation }) => {
           {avatar ? (
             <Image source={{ uri: avatar }} style={styles.avatar} />
           ) : (
-            <Text style={styles.avatarPlaceholder}>📸</Text>
+            <Text style={styles.avatarPlaceholder}>📷</Text>
           )}
         </TouchableOpacity>
 
