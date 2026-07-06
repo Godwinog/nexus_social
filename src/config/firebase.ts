@@ -1,22 +1,17 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
-import { getMessaging } from 'firebase/messaging';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDemoKey123456789',
-  authDomain: 'nexus-social-demo.firebaseapp.com',
-  projectId: 'nexus-social-demo',
-  storageBucket: 'nexus-social-demo.appspot.com',
-  messagingSenderId: '123456789123',
-  appId: '1:123456789123:web:abcdef123456789',
+  apiKey: "AIzaSyBA8P5NXWYLLnn7zTaaTHo2EmZMgKg0hxM",
+  authDomain: "nexus-social-88cd4.firebaseapp.com",
+  projectId: "nexus-social-88cd4",
+  storageBucket: "nexus-social-88cd4.firebasestorage.app",
+  messagingSenderId: "831880382027",
+  appId: "1:831880382027:web:a6375a8023dc9d972eafce"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-export const storage = getStorage(app);
-export const messaging = getMessaging(app);
-
-export default app;
