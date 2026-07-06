@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "831880382027",
+    "project_id": "nexus-social-88cd4",
+    "storage_bucket": "nexus-social-88cd4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831880382027:android:5e38cdfec568b7072eafce",
+        "android_client_info": {
+          "package_name": "com.nexus.social"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkvWEh1JcgIgJauf8W7msrhGEWJe0Lkbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
