@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Nexus",
+    "slug": "nexus-social",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "nexus",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1a2e"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTabletMode": false,
+      "bundleIdentifier": "com.nexus.social",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Nexus needs access to your camera to record videos",
+        "NSPhotoLibraryUsageDescription": "Nexus needs access to your photos to upload posts",
+        "NSMicrophoneUsageDescription": "Nexus needs access to your microphone to record videos"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a1a2e"
+      },
+      "package": "com.nexus.social",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#6E56CF"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to upload to Nexus.",
+          "cameraPermission": "The app accesses your camera to take posts.",
+          "microphonePermission": "The app accesses your microphone to record videos."
+        }
+      ],
+      "expo-video",
+      "expo-blur"
+    ],
+    "extra": {
+      "firebaseConfig": {
+        "apiKey": "AIzaSyDemoKey123456789",
+        "authDomain": "nexus-social-demo.firebaseapp.com",
+        "projectId": "nexus-social-demo",
+        "storageBucket": "nexus-social-demo.appspot.com",
+        "messagingSenderId": "123456789123",
+        "appId": "1:123456789123:web:abcdef123456789"
+      }
+    }
+  }
+}
